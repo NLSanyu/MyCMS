@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_13_161504) do
+ActiveRecord::Schema.define(version: 2019_12_20_084347) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -18,6 +18,12 @@ ActiveRecord::Schema.define(version: 2019_12_13_161504) do
   create_table "admin_users", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "first_name", limit: 25
+    t.string "last_name", limit: 50
+    t.string "username", limit: 25
+    t.string "email", limit: 100
+    t.string "password_digest"
+    t.index ["username"], name: "index_admin_users_on_username"
   end
 
   create_table "admin_users_pages", id: false, force: :cascade do |t|

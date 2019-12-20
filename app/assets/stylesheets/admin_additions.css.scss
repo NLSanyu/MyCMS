@@ -45,7 +45,7 @@ a.action.large {
 
 /* small action buttons */
 .actions {
-  width: 200px;
+  width: 230px;
   a.action {
     float: left;
     min-width: 3.5em;
@@ -109,9 +109,9 @@ span.status {
 }
 
 /* Errors */
-.field-with-errors {
+.field_with_errors {
   label { color: #AA0000; }
-  input { }
+  input { border: 1px solid red; }
 }
 
 #error-explanation {

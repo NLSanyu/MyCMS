@@ -5,6 +5,7 @@ $maroon: #800000;
 $green: #94B26F;
 $light_green: #B6D491;
 $light_gray: #d3d3d3;
+$dark_gray: #aaa;
 $dark_purple_gray: #262631;
 $light_purple_gray: #8583a0;
 $white: #FFFFFF;
@@ -62,11 +63,12 @@ a:hover {}
 
 #navigation {
   float: left;
-  width: 180px;
-  min-height: 480px;
+  width: 250px;
+  min-height: 700px;
   padding: 10px;
-  background: $green;
-  color: $light_purple_gray;
+  background: $dark_gray;
+  color: black;
+  margin-right: 15px;
 }
 
 #content { padding: 10px; }

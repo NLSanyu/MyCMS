@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  root :to => 'public#index'
+
+  get 'show/:permalink', :to => 'public#show', :as => 'public_show'
+
   get 'public/index'
   get 'public/show'
   get 'admin_users/index'
@@ -19,7 +23,7 @@ Rails.application.routes.draw do
       get :delete
     end
   end
-  
+
   resources :subjects do
     member do
       get :delete
